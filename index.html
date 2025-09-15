@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019) -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Team Mohaned & Final View">
+    <meta name="description" content="موقع راكوان نت هو وجهتك للتعلم والتطوير في البرمجة والأمن السيبراني، حيث نقدم دورات تعليمية مميزة للمبتدئين والمحترفين.">
+    <meta name="keywords" content="برمجة, أمن سيبراني, دورات تعليمية, راكوان نت, تطوير مهارات, تعلم البرمجة, دروس مجانية">
+    <meta property="og:title" content="موقع راكوان نت">
+    <meta property="og:description" content="تعلم البرمجة والأمن السيبراني مع دورات مميزة على موقع راكوان نت.">
+    <meta property="og:image" content="new/rako.jpg"> <!-- ضع هنا رابط الصورة -->
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./TEAM/new.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn.icon-icons.com/icons2/2550/PNG/512/code_icon_152655.png">
+    <title>Team Mohaned & Final View </title>
+
+
+    <!-- typed.js  -->
+    <script src="./TEAM/typed.min.js.download"></script>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="./TEAM/font-awesome.min.css">
+    
+    <style>
+    .donate-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f96854; /* لون خلفية الزر */
+            color: white; /* لون النص */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .donate-button:hover {
+            background-color: #e05647; /* لون الزر عند التمرير */
+        }
+        .donate-button i {
+            margin-left: 10px; /* مسافة بين النص والأيقونة */
+        }
+    </style>
+</head>
+<body dir="rtl">
+<div class="chat-button" onclick="toggleChat()">
+        💬
+    </div>
+    <div id="chat-window" class="chat-window" style="display: none;">
+        <div class="chat-header">
+            <span>الدردشة Ai</span>
+            <button class="close-button" onclick="closeChat()">✖</button>
+        </div>
+        <div id="chat-body" class="chat-body">
+        </div>
+        <div class="chat-input">
+            <div class="button-group">
+                <button onclick="sendResponse(&#39;😘 مرحباً , عليكم السلام&#39;)">مرحبا!</button>
+                <button onclick="sendResponse(&#39;برمجني Team Mohaned لاجيب عليكم ... لا تتدخل فيما لا يعنيك كم انت فضولي 😁&#39;)">من انت ؟</button>
+                <button onclick="sendResponse(&#39; مشاريع برمجيه , خدمات , تصميم وتطوير مواقع , مشاريع ذكاء اصطناعي &#39;)">خدماتكم؟</button>
+                <button onclick="sendResponse(&#39; نحن موجودون بشكل مستمر علي واتساب تفضل ارقام الفريق مهند . 01119233458 - عمار . 01010766286 - يوسف . 01153271691⁩ &#39;)">طرق التواصل</button>
+                <button onclick="sendResponse(&#39; فودافون كاش , PayPal ,  انستاباي , ماستر كارد و فيزا .&#39;)">خيارات الدفع ؟</button>
+                <button onclick="sendResponse(&#39;لدينا دعم فني متكامل على مدار الساعة لمساعدتك في حل أي مشكلة أو استفسار. فريقنا جاهز لتقديم المساعدة عبر وسائل تواصل  متعددة لضمان تجربة سلسة وخدمة عالية الجودة.&#39;)">لديكم دعم فني</button>
+                <button onclick="sendResponse(&#39;نعم , هذا موقع Final View , المتخصص في بناء المتاجر الاكترونيه المميزه التي تلبي احتياجات العملاء الذين يردون بناء متجر الكتروني لبيع منتجاته عليه  هذا رابط الموقع: finalview.42web.io &#39;)"> موقعنا Final View</button>                
+            </div>
+            <button class="refresh-button" onclick="clearChat()">مسح الرسائل</button> <!-- زر التحديث -->
+        </div>
+    </div>
+    <!-- scroll to top button -->
+    <button class="scrollbtn" id="btn" type="button" onclick="scrolltoTop()" style="display: block;"><i class="fa fa-arrow-up"></i></button>
+
+    <!-- navbar code start here -->
+    <nav class="navbar sticky" id="navbar">
+        <div class="logo">
+            <a href="">Team Mohaned</a>
+        </div>
+        <ul class="menu" id="menu">
+            <!--<li><a href="#home" onclick="menu()">الرئيسية</a></li>-->
+            <li><a href="#home">الرئيسية</a></li>
+            <!--<li><a href="#services" onclick="menu()">الخدمات</a></li>-->
+            <li style="color:red;"><a style="color:red;" href="https://finalview.42web.io/" target="_blank">لطلب متجر الاكتروني</a></li>
+            <li><a href="pages/Projects.html" target="_blank">المشاريع</a></li>
+            <li><a href="https://finalview.42web.io/" target="_blank">حجز مشروع</a></li>
+            <li><a href="#contact" onclick="menu()">تواصل معنا</a></li>
+        </ul>
+        <div class="menu-btn" onclick="menu()"><i class="fa fa-bars"></i></div>
+    </nav>
+
+    <!-- home section start here -->
+    <div class="home" id="home">
+        <div class="home-content">
+            <h1 class="name">Final View</h1>
+            <p><span class="typing">مصمم</span><span class="typed-cursor" aria-hidden="true">|</span></p><br><br>
+            
+            <button class="bto" onclick="window.open('pages/404/index.html', '_blank')">عرض العيد | استغل الان</button>
+        </div>
+    </div>
+    <!--<center>
+        <button class="bto1">1</button>
+        <button class="bto2">2</button>
+        <button class="bto3">3</button>
+    </center>-->
+    
+    <!-- about section start here -->
+    
+
+    
+
+    <!-- portfolio section start here -->
+    
+
+    <!-- blog section start here -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <h3 class="title">مشاريعنا</h3>
+            <div class="line"></div>
+            <div class="blog-content">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="./TEAM/proj1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>مولد الصور بلذكاء الاصطناعي</h3>
+                            <div class="category">ai image gen</div>
+                            <p></p>
+                            <br>
+                            <ul class="uli">
+                                <li class="liu">HTML</li>
+                                <li class="liu">CSS</li>
+                                <li class="liu">JAVA SCRIPT</li>
+                                <li class="liu">AI Gemini</li>
+                            </ul>
+                            <br>
+                            <button class="bto4" onclick="location.href=&#39;https://teamm0haned.github.io/Ai-image-generation/&#39;">معاينة المشروع</button>
+                        </div>
+                        <div class="author">
+                            <div class="name">
+                                <img src="./TEAM/rako.jpg" alt="">
+                                <p> Team Mohaned </p>
+                            </div>
+                            <div class="date">
+                                <p>2025/8/20</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="./TEAM/proj2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>مسجل الشاشة الاحترافي</h3>
+                            <div class="category">Pro Recorder</div>
+                            <p></p>
+                            <br>
+                            <ul class="uli">
+                                <li class="liu">HTML</li>
+                                <li class="liu">CSS</li>
+                                <li class="liu">JAVA SCRIPT</li>
+                            </ul>
+                            <br>
+                            <button class="bto4" onclick="location.href=&#39;https://teamm0haned.github.io/Professional-Screen-Recorder/&#39;">معاينة المشروع</button>
+                        </div>
+                        <div class="author">
+                            <div class="name">
+                                <img src="./TEAM/rako.jpg" alt="">
+                                <p>Team Mohaned &amp; Final View</p>
+                            </div>
+                            <div class="date">
+                                <p>2025/8/23</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="./TEAM/proj3.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>اداة المقالات الذكية</h3>
+                            <div class="category">AI Blog Writer</div>
+                            <p></p>
+                            <br>
+                            <ul class="uli">
+                                <li class="liu">HTML</li>
+                                <li class="liu">CSS</li>
+                                <li class="liu">JAVA SCRIPT</li>
+                                <li class="liu">AI Gemini</li>
+                            </ul>
+                            <br>
+                            <button class="bto4" <input="" type="button" onclick="location.href=&#39;https://teamm0haned.github.io/AI-Blog-Writer/&#39;">معاينة المشروع</button>
+                        </div>
+                        <div class="author">
+                            <div class="name">
+                                <img src="./TEAM/rako.jpg" alt="">
+                                <p> Team Mohaned </p>
+                            </div>
+                            <div class="date">
+                                <p>2025/8/28</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="services" id="services">
+        <div class="container">
+            <h3 class="title">الخدمات</h3>
+            <div class="line"></div>
+            <center>
+                <button class="bto1" onclick="location.href=&#39;https://finalview.42web.io/&#39;">لطلب متجر<br><span> الكتروني</span></button>
+            </center>
+            <div class="services-content">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="icon"><i class="fa fa-code"></i></div>
+                        <div class="card-title">تطوير المواقع</div>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="icon"><i class="fas fa-mobile-screen-button fa-3x"></i></div>
+                        <div class="card-title">برمجة تطبيقات</div>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="icon"><i class="fa fa-paint-brush"></i></div>
+                        <div class="card-title">تصميم مواقع</div>
+                       
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="icon"><i class="fa fa-laptop"></i></div>
+                        <div class="card-title">تصاميم متجاوبة</div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="icon"><i class="fa fa-line-chart"></i></div>
+                        <div class="card-title">خدمات الترويج</div>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="icon"><i class="fa-regular fa-square-check"></i></div>
+                        <div class="card-title">مشاريع تخرج</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+
+
+<!-- add -->
+ <br><br><br>
+<center><h1 class="hecho" id="ques">الأسئلة الشائعة</h1></center><br><br><br>
+<div class="faq-section">
+    
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(this)">
+        <span>ما هي الخدمات التي تقدمونها؟</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer" style="display: none;">
+        <p>نحن نقدم خدمات تصميم وتطوير مواقع الإنترنت، بناء المتاجر الإلكترونية، تحسين تجربة المستخدم (UX/UI)، وصيانة المواقع</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(this)">
+        <span>هل تقدمون مواقع متجاوبة مع جميع الأجهزة؟</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>نعم، جميع المواقع والمتاجر الإلكترونية التي نصممها متجاوبة بالكامل مع الحواسيب، الهواتف الذكية، والأجهزة اللوحية.</p>
+      </div>
+    </div>
+  
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(this)">
+        <span>كم من الوقت يستغرق إنشاء موقع أو متجر إلكتروني؟</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>يعتمد الوقت على حجم المشروع وتعقيد التصميم، عادةً بين أسبوعين إلى شهر للمشاريع المتوسطة، والمشاريع الكبيرة قد تحتاج وقت أطول.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <span>هل يمكنني تعديل المحتوى بعد تسليم الموقع او المتجر؟</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>نعم، نوفر لوحة تحكم سهلة الاستخدام تتيح لك تعديل النصوص، الصور، وإدارة المنتجات بسهولة.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <span>هل تقدمون خدمة استضافة واسم نطاق (Domain)؟</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>نعم، يمكننا مساعدتك في اختيار وشراء الاستضافة واسم النطاق لموقعك.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <span>هل يمكن إضافة بوابات دفع إلكترونية للمتاجر؟</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>بالطبع، ندعم ربط المتاجر الإلكترونية ببوابات دفع آمنة لتسهيل عمليات الشراء والدفع الإلكتروني.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <span>هل يمكن تحسين الموقع لمحركات البحث (SEO)؟</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>نعم، نقدم خدمات تحسين محركات البحث لضمان ظهور موقعك في نتائج البحث وزيادة الزوار.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <span>ما هي تكلفة تصميم موقع أو متجر إلكتروني؟</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>تعتمد التكلفة على حجم المشروع والخصائص المطلوبة، ويمكننا تقديم عرض سعر مفصل بعد تحديد احتياجاتك.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <span>كيف يمكنني التواصل لبدء المشروع؟</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>يمكنك التواصل معنا عبر  البريد الإلكتروني، أو رقم الهاتف المدرج، وسنقوم بالرد سريعًا لتحديد التفاصيل.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <span>ما طرق الدفع المتوفرة لدينا؟</span>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>الدفع عند الاستلام , الدفع عبر البطاقات الائتمانية / الخصم المباشر Visa, MasterCard , الدفع الإلكتروني عبر المحافظ الرقمية PayPal, Fawry, Vodafone Cash , انستاباي</p>
+        </div>
+      </div>
+
+  </div>
+<br><br><br><br>
+<!-- add end -->
+<!-- add -->
+<section class="testimonials">
+    <h4>فريقنا</h4>
+  <div class="team-container">
+
+    <!-- عضو 1 -->
+    <div class="team-member">
+      <img src="images/mohaned.jpg" alt="مهند" class="team-image">
+      <h3>مهند</h3>
+      <p>مصمم ومطور تطبيقات ومواقع ومشاريع ذكاء اصطناعي.</p>
+      <div class="social-links">
+        <a href="https://teammohaned.com" target="_blank"><i class="fa-solid fa-globe"></i></a>
+        <a href="https://www.youtube.com/@team_mohaned" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@team_m0haned" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/201119233458" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/TeamM0HANED" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <!-- عضو 2 -->
+    <div class="team-member">
+      <img src="images/yousef.jpg" alt="يوسف الفتي" class="team-image">
+      <h3>يوسف الفتي</h3>
+      <p>مبرمج ومطور مواقع ويب وجوال.</p>
+      <div class="social-links">
+        <a href="https://elfata.42web.io/?i=2" target="_blank"><i class="fa-solid fa-globe"></i></a>
+        <a href="https://wa.me/201153271691" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/youssef-elfata-4b34a1319/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- عضو 3 -->
+    <div class="team-member">
+      <img src="images/ammar.jpg" alt="عمار اسامة" class="team-image">
+      <h3>عمار اسامة</h3>
+      <p>مصمم واجهات المستخدم ومطور برامج</p>
+      <div class="social-links">
+        <a href="#" target="_blank"><i class="fa-solid fa-globe"></i></a>
+        <a href="mailto:amarcs.services@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/201010766286" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ✅ CSS الخاص بالقسم -->
+<style>
+.team-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #121212; /* خلفية داكنة */
+}
+
+.team-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #fff; /* عنوان أبيض */
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background: #1e1e1e; /* لون كروت داكن */
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #fff; /* النصوص باللون الأبيض */
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+}
+
+.team-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #556b2f; /* إطار زيتي */
+}
+
+.team-member h3 {
+  margin: 10px 0;
+  font-size: 22px;
+  color: #6b8e23; /* اسم العضو باللون الزيتي */
+}
+
+.team-member p {
+  color: #ddd; /* باقي النصوص فاتح */
+  margin-bottom: 15px;
+}
+
+.social-links a {
+  margin: 0 8px;
+  font-size: 18px;
+  color: #aaa;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #6b8e23; /* عند المرور يصبح زيتي */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+<!-- ✅ استدعاء مكتبة الأيقونات -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </div>
+</section>
+
+  
+  <!-- add end -->
+
+
+    <!-- contact section start here -->
+    <section class="contact" id="contact">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="contact-content">
+                <div class="message">
+                    <form>
+                        <h3 class="heading">تواصل معنا</h3><br>
+                        <img src="./TEAM/rako.jpg" alt="" width="200px">
+                        <br><br>
+                        <p>أرسل رسالة على الحساب الرسمي في تليجرام الخاص بي</p>
+                        
+                        <p>ملاحظه لا اتحمل مسؤولية اي شخص ينتحل صفتي او يتكلم بالنيابه عني وليس لدي اي وسائل تواصل اخرى  غير الحسابات المذكوره ادناه</p>
+                        <br>
+                        <p style="color:#819b0c; font-weight:bold;">مرحباً بكم في Team Mohaned</p>
+                        
+                    </form>
+                </div>
+                <div class="gettouch">
+                    <h3 class="heading">من نحن</h3>
+                    <div class="line"></div>
+                    <p>مرحبًا بك في [Team Mohaned]، منصتك الأولى لبرمجة وتطوير تطبيقات الويب والموبايل. نحن [Final View]، مطورين محترفين شغوفين بمشاركة المعرفة لمساعدة الأفراد والشركات على بناء مشاريع مبتكرة واحترافية.</p>
+                    <div class="info"><i class="fa-solid fa-location-dot"></i> cairo </div>
+                    <div class="info"><i class="fa fa-envelope"></i> teammohaned@gmail.com </div>
+                    <div class="info"><i class="fa fa-envelope"></i> finalviewlabs@gmail.com </div>
+                    <div class="info"><i class="fa fa-envelope"></i> amarcs.services@gmail.com </div>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        <!--<i class="fa fa-telegram"></i>-->
+                        <a href="https://www.youtube.com/@team_mohaned"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="fras">
+        <div class="container">
+            <h3 class="title" style="color:white;">استفد من الفرص</h3>
+            <div class="line"></div>
+            <center>
+                <p style="color:white;">استفد من الخدمات التي تقدمها الشركات الاتيه واستغل العروض المتاحه من خلالنا</p>
+            </center>
+            <div class="portfolio-content">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="./TEAM/host.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>مواقع واستضافات</h3>
+                            <p>خدمات سريعة ومحمية من الشركة الرائدة والاشهر في مجال الاستضافات وخدمات الذكاء الاصطناعي و وورد بريس وتأمين حماية كاملة لموقع والحصول على بريد الكتروني وخدمات كثيرة اكتشفها بنفسك </p><br>
+                            <p><span class="category">كوبون الخصم</span> | TMCODE10</p>
+                            <br>
+                            <button class="bto6" onclick="location.href=&#39;https://www.hostinger.com/cart?product=hosting%3Ahostinger_premium&amp;period=12&amp;referral_type=cart_link&amp;REFERRALCODE=1589348&amp;referral_id=019455ef-abf9-7076-b6a6-b91817d5dfe0&#39;">انتقل الى هوستنجر</button>
+                        </div>
+                    </div>
+                </div>
+            <div class="portfolio-content">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="./TEAM/egyhost.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>مواقع واستضافات</h3>
+                            <p>استضافة مصر تقدّم لك خدمات استضافة سريعة وآمنة من الشركة الرائدة والأشهر في مجال الاستضافات. نوفر حلول متكاملة تشمل دعم ووردبريس، تقنيات الذكاء الاصطناعي، حماية شاملة لموقعك، بريد إلكتروني احترافي، والعديد من الخدمات المميزة التي يمكنك اكتشافها بنفسك.</p><br>
+                            <p><span class="category">خصم 50%</span> </p>
+                            <br>
+                            <button class="bto6" onclick="location.href=&#39;https://egyhosting.com/aff.php?aff=195&#39;">انتقل الى استضافة مصر</button>
+                        </div>
+                    </div>
+                </div>
+               
+        </div>
+    </section>
+
+    <!-- add -->
+    <footer class="footer">
+        <center><div id="visitorCount"></div><br></center>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h4>أقسام الموقع</h4>
+            <ul class="footer-links">
+              <li><a href="#home">الرئيسية</a></li>
+              <li><a href="#services">الخدمات</a></li>
+              <li><a href="#blog">المشاريع
+              <li><a href="pages/privacy.html">السياسات</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>معلومات الاتصال</h4>
+            <p>البريد الالكتروني :  teammohaned@gmail.com</p><br>
+            <p>البريد الالكتروني :  finalviewlabs@gmail.com</p><br>
+            <p>البريد الالكتروني :  amarcs.services@gmail.com</p><br>
+            <div class="social-media">
+                <a href="#" target="_blank">فيسبوك</a> |
+                <a href="#" target="_blank">تليجرام</a> |
+                <a href="https://www.youtube.com/@team_mohaned" target="_blank">يوتيوب</a>
+              </div><br>
+              <h1>Final View</h1><br>
+              
+            
+          </div>
+          <div class="footer-section">
+            <h4>موقعنا الاخري</h4>
+            <ul class="footer-links">
+              <li><a href="https://finalview.42web.io/?i=1" target="_blank">Final View</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Copyright Team Mohaned. All Rights Reserved </p>
+            <p> جميع الحقوق محفوظة</p>
+            <p>Designed by <a href="#" style="color:#9eb20a;">Team Mohaned & Final View</a></p><a href="#" style="color:#9eb20a;">
+        </a></div><a href="https://t.me/Cyberato" style="color:#9eb20a;">
+      </a></footer><a href="https://t.me/Cyberato" style="color:#9eb20a;">
+      <!-- add end -->
+      
+
+    <script src="./TEAM/jquery-3.5.1.slim.min.js.download"></script>
+    <script src="./TEAM/popper.min.js.download"></script>
+    <script src="./TEAM/bootstrap.min.js.download"></script>
+
+    <script src="./TEAM/new.js.download"></script>
+    <script>
+        
+
+
+        
+        // تنفيذ الدالة عند تحميل الصفحة
+        document.addEventListener("DOMContentLoaded", updateVisitorCount);
+
+
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            const arrow = element.querySelector('.arrow');
+          
+            if (answer.style.display === 'block') {
+              answer.style.display = 'none';
+              arrow.innerHTML = '&#9660;'; // سهم لأسفل
+            } else {
+              answer.style.display = 'block';
+              arrow.innerHTML = '&#9650;'; // سهم لأعلى
+            }
+          }
+          
+
+let visitorCount = localStorage.getItem('visitorCount') || 0;
+visitorCount++; 
+localStorage.setItem('visitorCount', visitorCount); 
+document.getElementById('counter').textContent = visitorCount;
+
+
+function toggleChat() {
+    var chatWindow = document.getElementById('chat-window');
+    chatWindow.style.display = chatWindow.style.display === 'none' ? 'block' : 'none';
+}
+
+function closeChat() {
+    document.getElementById('chat-window').style.display = 'none';
+}
+
+function sendResponse(response) {
+    var chatBody = document.getElementById('chat-body');
+
+    // إنشاء عنصر رسالة جديدة
+    var message = document.createElement('div');
+    message.classList.add('chat-message', 'bot-message'); // رسالة من الروبوت
+    chatBody.appendChild(message);
+
+    typeMessage(message, response); // استدعاء دالة الكتابة
+}
+
+function typeMessage(element, message, index = 0) {
+    if (index < message.length) {
+        element.textContent += message[index]; // إضافة حرف
+        index++;
+        setTimeout(() => typeMessage(element, message, index), 100); // تأخير 100 مللي ثانية
+    } else {
+        // عند الانتهاء من الكتابة
+        element.textContent += ""; // يمكنك إضافة أي شيء آخر بعد الكتابة
+    }
+}
+function clearChat() {
+    var chatBody = document.getElementById('chat-body');
+    chatBody.innerHTML = ''; // مسح جميع الرسائل
+}
+
+        
+document.addEventListener('contextmenu', event=> event.preventDefault()); 
+document.onkeydown = function(e) { 
+if(event.keyCode == 123) { 
+return false; 
+} 
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){ 
+return false; 
+} 
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
+return false; 
+} 
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){ 
+return false; 
+} 
+} 
+  
+    </script>
+
+</a><style type="text/css" data-typed-js-css="true">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      </style></body></html>
